@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/android"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="14sp"
+        android:src="@drawable/android"
+        app:layout_constraintHeight_percent=".22"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+    </ImageView>
+
+    <Button
+        android:id="@+id/android_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp"
+        android:background="@drawable/round_btn"
+        android:onClick="on_Android_Click"
+        android:text="@string/android_course"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/android">
+
+    </Button>
+    <ImageView
+        android:id="@+id/ios"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="9sp"
+        android:src="@drawable/ios"
+        app:layout_constraintHeight_percent=".22"
+        app:layout_constraintTop_toBottomOf="@id/android_btn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+    </ImageView>
+
+    <Button
+        android:id="@+id/ios_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp"
+        android:background="@drawable/round_btn"
+        android:onClick="on_Ios_Click"
+        android:text="@string/ios_course"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ios">
+
+    </Button>
+    <ImageView
+        android:id="@+id/fullstack"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="9sp"
+        android:src="@drawable/fullstack"
+        app:layout_constraintHeight_percent=".22"
+        app:layout_constraintTop_toBottomOf="@id/ios_btn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+    </ImageView>
+
+    <Button
+        android:id="@+id/fullstack_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp"
+        android:background="@drawable/round_btn"
+        android:onClick="on_Full_Stack_Click"
+        android:text="@string/full_stack"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fullstack">
+
+    </Button>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
